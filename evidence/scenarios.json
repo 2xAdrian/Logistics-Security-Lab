@@ -1,0 +1,347 @@
+{
+  "notice": "All supplied company evidence is fictional. It is not learner-generated telemetry.",
+  "records": [
+    {
+      "id": "L101",
+      "case": "C01",
+      "time": "2026-11-05T10:00:00Z",
+      "source": "collector",
+      "event": "heartbeat_failure",
+      "user": "svc.collector",
+      "host": "WH-07",
+      "details": "Collector stopped after approved agent upgrade; log forwarding service did not restart.",
+      "status": "stopped"
+    },
+    {
+      "id": "L102",
+      "case": "C01",
+      "time": "2026-11-05T09:55:00Z",
+      "source": "change",
+      "event": "maintenance_record",
+      "user": "it.morgan",
+      "host": "WH-07",
+      "details": "CHG-17 approved collector upgrade 09:50–10:00 UTC; no approval to disable monitoring."
+    },
+    {
+      "id": "L103",
+      "case": "C01",
+      "time": "2026-11-05T10:08:00Z",
+      "source": "inventory",
+      "event": "asset_record",
+      "user": "warehouse.jules",
+      "host": "WH-07",
+      "details": "Warehouse scanner; shipping-critical; last heartbeat 09:59 UTC."
+    },
+    {
+      "id": "L201",
+      "case": "C02",
+      "time": "2026-11-05T10:10:00Z",
+      "source": "mail",
+      "event": "received",
+      "user": "dispatch.alex",
+      "host": "DISPATCH-01",
+      "details": "Message MSG-201: urgent dispatch replacement; visible From dispatch@northstar.test; reply-to dispatch@route-support.invalid.",
+      "sender": "dispatch@northstar.test",
+      "domain": "route-support.invalid",
+      "message": "MSG-201"
+    },
+    {
+      "id": "L202",
+      "case": "C02",
+      "time": "2026-11-05T10:10:00Z",
+      "source": "gateway",
+      "event": "authentication",
+      "user": "dispatch.alex",
+      "host": "MAIL-01",
+      "details": "Trusted lab gateway reports SPF pass smtp.mailfrom=route-support.invalid; DKIM pass header.d=route-support.invalid; DMARC fail header.from=northstar.test. Reported results only; no cryptographic verification in this app."
+    },
+    {
+      "id": "L203",
+      "case": "C02",
+      "time": "2026-11-05T10:12:00Z",
+      "source": "proxy",
+      "event": "access_search",
+      "user": "dispatch.alex",
+      "host": "DISPATCH-01",
+      "details": "Search of retained proxy interval 10:10–10:12: no access to route-support.invalid. Coverage ends 10:12; absence is bounded."
+    },
+    {
+      "id": "L204",
+      "case": "C02",
+      "time": "2026-11-05T10:11:00Z",
+      "source": "mail",
+      "event": "recipient_scope",
+      "user": "dispatch.alex",
+      "host": "MAIL-01",
+      "details": "MSG-201 delivered to dispatch.alex only. No other matching deliveries in retained mail dataset."
+    },
+    {
+      "id": "L301",
+      "case": "C03",
+      "time": "2026-11-05T10:20:00Z",
+      "source": "artifact",
+      "event": "attachment_source",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "Inert route_manifest.html source: <form action=\"https://manifest-check.invalid/submit\"><input name=\"employee\"><input name=\"password\" type=\"password\"></form>. Branding text: Northstar routing portal.",
+      "domain": "manifest-check.invalid"
+    },
+    {
+      "id": "L302",
+      "case": "C03",
+      "time": "2026-11-05T10:20:00Z",
+      "source": "artifact",
+      "event": "qr_payload",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "Decoded synthetic QR payload: https://manifest-check.invalid/route?id=WH03. Decoding is supplied evidence; no external URL is opened."
+    },
+    {
+      "id": "L303",
+      "case": "C03",
+      "time": "2026-11-05T10:21:00Z",
+      "source": "trace",
+      "event": "training_execution",
+      "user": "warehouse.jules",
+      "host": "SANDBOX-DEMO",
+      "details": "Supplied synthetic trace: browser loads local training form; submitting dummy values produces an intercepted request to manifest-check.invalid/submit; no real network request or credentials."
+    },
+    {
+      "id": "L304",
+      "case": "C03",
+      "time": "2026-11-05T10:19:00Z",
+      "source": "mail",
+      "event": "received",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "MSG-301 attachment route_manifest.html; employee reports it before entering any information."
+    },
+    {
+      "id": "L401",
+      "case": "C04",
+      "time": "2026-11-05T10:30:00Z",
+      "source": "mail",
+      "event": "vendor_thread",
+      "user": "finance.lee",
+      "host": "FIN-01",
+      "details": "From billing@parts-vendor.test. SPF/DKIM/DMARC reported pass. Existing invoice INV-1042 now requests payment to a new bank account and gives callback number 555-0199."
+    },
+    {
+      "id": "L402",
+      "case": "C04",
+      "time": "2026-11-05T10:31:00Z",
+      "source": "directory",
+      "event": "supplier_record",
+      "user": "finance.lee",
+      "host": "FIN-01",
+      "details": "Pre-existing SUP-42 directory: Parts Vendor; registered callback extension 0142; invoice INV-1042 originally used account ending 4402. Do not use the newly emailed number."
+    },
+    {
+      "id": "L403",
+      "case": "C04",
+      "time": "2026-11-05T10:29:00Z",
+      "source": "identity",
+      "event": "vendor_notice",
+      "user": "vendor.security",
+      "host": "MAIL-01",
+      "details": "Vendor security notice through registered channel: billing account has unauthorized sessions; pending bank changes must be independently verified."
+    },
+    {
+      "id": "L501",
+      "case": "C05",
+      "time": "2026-11-05T10:40:00Z",
+      "source": "identity",
+      "event": "signin_success",
+      "user": "dispatch.alex",
+      "host": "UNKNOWN",
+      "details": "New simulated device DEV-X; documentation IP 203.0.113.24; session S-501 created. A new IP alone is not proof of compromise."
+    },
+    {
+      "id": "L502",
+      "case": "C05",
+      "time": "2026-11-05T10:42:00Z",
+      "source": "audit",
+      "event": "forwarding_rule",
+      "user": "dispatch.alex",
+      "host": "MAIL-01",
+      "details": "Unauthorized rule RULE-51 forwards incoming messages to archive@external-archive.invalid. Registered supervisor denies any approved forwarding."
+    },
+    {
+      "id": "L503",
+      "case": "C05",
+      "time": "2026-11-05T10:44:00Z",
+      "source": "policy",
+      "event": "identity_verification",
+      "user": "dispatch.alex",
+      "host": "DIRECTORY",
+      "details": "ID-04: use registered supervisor directory callback. Self-reported caller name and knowledge of employee ID are not sufficient."
+    },
+    {
+      "id": "L504",
+      "case": "C05",
+      "time": "2026-11-05T10:43:00Z",
+      "source": "helpdesk",
+      "event": "reset_request",
+      "user": "unknown.caller",
+      "host": "PHONE",
+      "details": "Caller asks for reset and requests the temporary credential sent to an unregistered external mailbox."
+    },
+    {
+      "id": "L601",
+      "case": "C06",
+      "time": "2026-11-05T10:50:00Z",
+      "source": "mail",
+      "event": "attachment_open",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "MSG-601 delivered to warehouse.jules; local training attachment opened at 10:50 UTC; attachment artifact ID ART-601."
+    },
+    {
+      "id": "L602",
+      "case": "C06",
+      "time": "2026-11-05T10:51:00Z",
+      "source": "endpoint",
+      "event": "process_start",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "Training process RouteSync-demo.exe parent=training-viewer; artifact=ART-601; process id 6012. Synthetic process telemetry."
+    },
+    {
+      "id": "L603",
+      "case": "C06",
+      "time": "2026-11-05T10:52:00Z",
+      "source": "network",
+      "event": "outbound_connection",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "Process 6012 contacted documentation IP 198.51.100.42; lab endpoint inventory confirms warehouse.jules is its assigned user."
+    },
+    {
+      "id": "L701",
+      "case": "C07",
+      "time": "2026-11-05T11:00:00Z",
+      "source": "inventory",
+      "event": "installed_version",
+      "user": "svc.route",
+      "host": "ROUTE-02",
+      "details": "RouteAgent installed version 1.2; internal status interface enabled; asset supports warehouse routing.",
+      "version": "1.2"
+    },
+    {
+      "id": "L702",
+      "case": "C07",
+      "time": "2026-11-05T11:01:00Z",
+      "source": "advisory",
+      "event": "LAB-ADV-001",
+      "user": "training.vendor",
+      "host": "ROUTE-02",
+      "details": "Fictional training advisory: RouteAgent versions below 1.3 allow unauthenticated status reads. Version 1.3 fixes this invented issue."
+    },
+    {
+      "id": "L703",
+      "case": "C07",
+      "time": "2026-11-05T11:02:00Z",
+      "source": "scan",
+      "event": "exposure_confirmed",
+      "user": "svc.scanner",
+      "host": "ROUTE-02",
+      "details": "Controlled fixture confirms an unauthenticated status read from the warehouse segment. No internet exposure shown. Patch requires maintenance approval CHG-72."
+    },
+    {
+      "id": "L801",
+      "case": "C08",
+      "time": "2026-11-05T11:10:00Z",
+      "source": "mail",
+      "event": "campaign_message",
+      "user": "dispatch.alex",
+      "host": "DISPATCH-01",
+      "details": "Message A: delivery exception; campaign marker NX-77; destination parcel-review.invalid/start.",
+      "domain": "parcel-review.invalid",
+      "campaign": "NX-77"
+    },
+    {
+      "id": "L802",
+      "case": "C08",
+      "time": "2026-11-05T11:12:00Z",
+      "source": "mail",
+      "event": "campaign_message",
+      "user": "finance.lee",
+      "host": "FIN-01",
+      "details": "Message B: route confirmation; campaign marker NX-77; destination parcel-review.invalid/start.",
+      "domain": "parcel-review.invalid",
+      "campaign": "NX-77"
+    },
+    {
+      "id": "L803",
+      "case": "C08",
+      "time": "2026-11-05T11:13:00Z",
+      "source": "change",
+      "event": "approved_supplier",
+      "user": "warehouse.jules",
+      "host": "WH-PC-03",
+      "details": "Message C: approved supplier at parts-vendor.test; transaction matches CHG-73 and registered directory; no NX-77 marker.",
+      "domain": "parts-vendor.test",
+      "campaign": "none"
+    },
+    {
+      "id": "L804",
+      "case": "C08",
+      "time": "2026-11-05T11:09:00Z",
+      "source": "intel",
+      "event": "training_bulletin",
+      "user": "intel.team",
+      "host": "SOC",
+      "details": "Fictional bulletin INT-08: NX-77 observed using parcel-review.invalid. Domain indicator is time-bounded; other messages need independent evidence. This is synthetic intel, not a live external threat report."
+    },
+    {
+      "id": "L901",
+      "case": "C09",
+      "time": "2026-11-05T11:20:00Z",
+      "source": "detection",
+      "event": "rule_baseline",
+      "user": "soc.analyst",
+      "host": "SOC",
+      "details": "RULE-09 alerts if failure count >=3 per supplied five-minute group. No approved-job suppression."
+    },
+    {
+      "id": "L902",
+      "case": "C09",
+      "time": "2026-11-05T11:21:00Z",
+      "source": "policy",
+      "event": "job_approval",
+      "user": "svc.batch",
+      "host": "SOC",
+      "details": "CHG-90 authorizes the batch validation job represented by approved=true. Suppression must apply only to approved job groups."
+    },
+    {
+      "id": "L1001",
+      "case": "C10",
+      "time": "2026-11-05T11:30:00Z",
+      "source": "mail",
+      "event": "flagged_receipt",
+      "user": "dispatch.alex",
+      "host": "DISPATCH-01",
+      "details": "MSG-1001 route receipt: supplier parts-vendor.test, transaction TX-1001, file route_receipt.txt. Flagged because external message contains dispatch terms."
+    },
+    {
+      "id": "L1002",
+      "case": "C10",
+      "time": "2026-11-05T11:29:00Z",
+      "source": "change",
+      "event": "approved_transaction",
+      "user": "it.morgan",
+      "host": "DISPATCH-01",
+      "details": "CHG-1001 approved route receipt from parts-vendor.test; transaction TX-1001 matches. Registered supplier verification complete."
+    },
+    {
+      "id": "L1003",
+      "case": "C10",
+      "time": "2026-11-05T11:32:00Z",
+      "source": "identity",
+      "event": "blocked_attempt",
+      "user": "dispatch.temp",
+      "host": "ID-01",
+      "details": "Separate alert ID-1003: disabled account received blocked sign-in attempts. Scope review assigned to senior analyst; unresolved. Preserve ownership and next steps during handover."
+    }
+  ]
+}

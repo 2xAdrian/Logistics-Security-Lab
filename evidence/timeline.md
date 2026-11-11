@@ -1,0 +1,111 @@
+# Recorded activity
+
+All times are UTC as reported by this device. Supplied scenario timestamps are separate.
+
+- 2026-11-05T22:54:24.862Z | C02 | learner_answer: Do these two email addresses match? | No, the part after @ is different.
+- 2026-11-05T22:54:47.396Z | C02 | learner_answer: Does the sender check support the claimed company? | No.
+- 2026-11-05T22:55:03.500Z | C02 | learner_answer: What should you do next? | Move the message to quarantine and check that it moved.
+- 2026-11-05T22:55:11.831Z | C02 | simulated_action: quarantine_message | MSG-201 moved to lab quarantine.
+- 2026-11-05T22:55:19.662Z | C02 | simulated_action: verify_quarantine | MSG-201 quarantine state confirmed.
+- 2026-11-05T22:59:28.511Z | C02 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-05T23:15:05.528Z | C02 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-05T23:15:07.634Z | C02 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-07T15:39:57.656Z | C03 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-07T15:40:10.516Z | C03 | learner_answer: Which clue tells you where the information would go? | The destination address.
+- 2026-11-07T15:40:19.312Z | C03 | learner_answer: Should you enter a real password? | No.
+- 2026-11-07T15:40:59.698Z | C03 | learner_answer: What is the safest lab response? | Block that exact destination and test the block.
+- 2026-11-07T15:41:44.131Z | C03 | simulated_action: block_domain | Exact destination manifest-check.invalid blocked in the lab.
+- 2026-11-07T15:41:49.829Z | C03 | simulated_action: verify_block | Synthetic destination request denied by the lab blocklist.
+- 2026-11-07T15:41:54.229Z | C03 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-07T15:43:02.747Z | C03 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-07T15:43:04.447Z | C03 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-07T15:43:12.693Z | C04 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-07T15:43:23.115Z | C04 | learner_answer: Do passed email checks prove the bank change is safe? | No, the request still needs verification.
+- 2026-11-07T15:43:34.362Z | C04 | learner_answer: Which number should you use? | The existing directory number.
+- 2026-11-09T17:42:06.503Z | C04 | learner_answer: What should happen before payment? | Verify the supplier, hold the payment, and notify a senior analyst.
+- 2026-11-09T17:42:18.288Z | C04 | simulated_action: callback_vendor | Registered supplier extension 0142 denies bank change. Callback simulated.
+- 2026-11-09T17:42:21.288Z | C04 | simulated_action: hold_payment | INV-1042 held in simulated finance queue.
+- 2026-11-09T17:42:26.338Z | C04 | simulated_action: escalate | Senior analyst escalation recorded in simulation. No external notification sent.
+- 2026-11-09T17:42:35.406Z | C04 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-09T17:59:43.453Z | C04 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-09T17:59:44.990Z | C04 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-09T17:59:53.220Z | C05 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-09T18:00:00.973Z | C05 | learner_answer: How should you verify the request? | Use the registered supervisor.
+- 2026-11-09T18:00:09.402Z | C05 | learner_answer: Which is the stronger clue? | The unapproved forwarding rule.
+- 2026-11-09T18:00:54.933Z | C05 | learner_answer: Is changing the password the entire recovery? | No, old sessions and forwarding also need attention.
+- 2026-11-09T18:01:01.133Z | C05 | simulated_action: verify_identity | Registered supervisor confirms employee through simulated ID-04 callback.
+- 2026-11-09T18:01:14.215Z | C05 | simulated_action: disable_account | Test account disabled; existing sessions remain until revoked.
+- 2026-11-09T18:01:24.064Z | C05 | simulated_action: reset_credential | Fictional credential version 2; sessions and forwarding unchanged.
+- 2026-11-09T18:01:38.865Z | C05 | simulated_action: revoke_sessions | All simulated sessions revoked.
+- 2026-11-09T18:01:44.315Z | C05 | simulated_action: remove_forwarding | RULE-51 removed from lab account.
+- 2026-11-09T18:01:58.415Z | C05 | simulated_action: restore_account | Test account enabled after cleanup.
+- 2026-11-09T18:02:02.332Z | C05 | simulated_action: verify_recovery | Recovery verified in simulation: enabled, updated credential, no old sessions, no forwarding.
+- 2026-11-09T18:02:04.582Z | C05 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-09T18:53:31.462Z | C05 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-09T18:53:34.495Z | C05 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-09T18:53:47.841Z | C06 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-10T00:13:00.466Z | C06 | learner_answer: Are there matching details linking these events? | Yes: the same computer and attachment ID.
+- 2026-11-10T00:13:11.014Z | C06 | learner_answer: What should you include in your timeline? | The attachment, process, and connection.
+- 2026-11-10T00:13:21.364Z | C06 | learner_answer: What should you do before cleanup? | Preserve the snapshot.
+- 2026-11-10T00:14:09.381Z | C06 | simulated_action: capture_snapshot | Synthetic endpoint evidence snapshot preserved.
+- 2026-11-10T00:14:11.246Z | C06 | simulated_action: isolate_endpoint | WH-PC-03 isolated in simulation; your computer is unaffected.
+- 2026-11-10T00:14:13.546Z | C06 | simulated_action: remove_artifact | RouteSync-demo artifact removed from simulated state.
+- 2026-11-10T00:14:14.930Z | C06 | simulated_action: restore_endpoint | WH-PC-03 simulated connectivity restored.
+- 2026-11-10T00:14:16.080Z | C06 | simulated_action: verify_endpoint | Lab endpoint verified: connected, training artifact absent, snapshot retained.
+- 2026-11-10T00:14:48.596Z | C06 | simulated_action: escalate | Senior analyst escalation recorded in simulation. No external notification sent.
+- 2026-11-10T00:14:49.830Z | C06 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-10T00:15:36.046Z | C06 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-10T00:15:37.412Z | C06 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-10T00:16:42.094Z | C01 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-10T00:20:56.490Z | C01 | learner_answer: What does this evidence support? | A reporting failure after maintenance.
+- 2026-11-10T00:23:08.921Z | C01 | learner_answer: Can missing records prove nothing happened? | Yes.
+- 2026-11-10T00:23:09.804Z | C01 | learner_answer: Can missing records prove nothing happened? | No, there is a gap in what we can see.
+- 2026-11-10T00:23:24.304Z | C01 | learner_answer: What confirms reporting started again? | You clicked restart.
+- 2026-11-10T00:23:25.120Z | C01 | learner_answer: What confirms reporting started again? | A new heartbeat arrives.
+- 2026-11-10T00:23:57.972Z | C01 | simulated_action: restore_collector | WH-07 collector running.
+- 2026-11-10T00:24:09.487Z | C01 | simulated_action: verify_heartbeat | New synthetic WH-07 heartbeat received. Historical visibility gap remains documented.
+- 2026-11-10T00:24:11.771Z | C01 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-10T00:25:13.477Z | C01 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-10T00:25:14.899Z | C01 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-10T00:25:18.245Z | C07 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-10T00:26:05.247Z | C07 | learner_answer: Does version 1.2 fall in the affected range? | Yes.
+- 2026-11-10T00:27:04.579Z | C07 | learner_answer: What comes before the patch? | Approval for the change.
+- 2026-11-10T00:28:25.945Z | C07 | learner_answer: What should happen after the patch? | Retest the finding.
+- 2026-11-10T00:28:58.564Z | C07 | simulated_action: approve_maintenance | CHG-72 maintenance approval recorded in simulation.
+- 2026-11-10T00:29:02.479Z | C07 | simulated_action: patch_agent | Simulated RouteAgent inventory updated to 1.3.
+- 2026-11-10T00:29:04.146Z | C07 | simulated_action: rescan | Simulated inventory retest: LAB-ADV-001 resolved at 1.3. No actual host was scanned.
+- 2026-11-10T00:29:06.147Z | C07 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-10T00:29:18.298Z | C07 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-10T00:29:23.076Z | C07 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-10T00:29:25.275Z | C08 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-10T00:30:21.759Z | C08 | learner_answer: What connects A and B? | The same destination and marker.
+- 2026-11-10T00:30:31.375Z | C08 | learner_answer: Should you automatically group C with A and B? | No, C has separate legitimate supporting evidence.
+- 2026-11-10T00:30:54.029Z | C08 | learner_answer: What belongs on this case’s watchlist? | Only the supported suspicious destination.
+- 2026-11-10T00:31:55.035Z | C08 | simulated_action: publish_watchlist | Exact campaign domain added. Approved supplier excluded. Watchlist expires after this exercise.
+- 2026-11-10T00:31:58.418Z | C08 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-10T00:32:56.472Z | C08 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-10T00:32:58.165Z | C08 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-10T00:33:37.096Z | C09 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-10T00:33:49.830Z | C09 | learner_answer: Why might this rule be noisy? | It also catches normal mistakes.
+- 2026-11-10T00:33:56.612Z | C09 | learner_answer: Would a threshold of 8 catch that example? | Yes.
+- 2026-11-10T00:33:57.413Z | C09 | learner_answer: Would a threshold of 8 catch that example? | No.
+- 2026-11-10T00:36:04.203Z | C09 | learner_answer: Which exception is more focused? | Exclude only the explicitly approved job groups.
+- 2026-11-10T00:36:07.173Z | C09 | simulated_action: baseline_rule | Baseline TP=3, FP=3, FN=0.
+- 2026-11-10T00:36:09.972Z | C09 | simulated_action: test_rule | Candidate training TP=3, FP=3, FN=0; held-out TP=2, FP=1, FN=0.
+- 2026-11-10T00:39:39.176Z | C09 | simulated_action: test_rule | Candidate training TP=3, FP=2, FN=0; held-out TP=2, FP=1, FN=0.
+- 2026-11-10T00:39:53.053Z | C09 | simulated_action: test_rule | Candidate training TP=3, FP=1, FN=0; held-out TP=2, FP=0, FN=0.
+- 2026-11-10T00:39:57.346Z | C09 | simulated_action: deploy_rule | Tested rule activated in the browser lab only.
+- 2026-11-10T00:39:59.768Z | C09 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-10T00:41:11.862Z | C09 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-10T00:41:13.262Z | C09 | guided_steps_completed: Guided steps and short note completed.
+- 2026-11-10T00:41:16.179Z | C10 | guided_lesson_started: Learner started the guided lesson.
+- 2026-11-10T00:42:02.263Z | C10 | learner_answer: Do the records support releasing this receipt? | Yes.
+- 2026-11-10T00:42:04.672Z | C10 | learner_answer: Does releasing the receipt close this account alert too? | Yes.
+- 2026-11-10T00:42:05.438Z | C10 | learner_answer: Does releasing the receipt close this account alert too? | No, it still needs its own review.
+- 2026-11-10T00:42:06.738Z | C10 | learner_answer: Which note helps the next person? | Senior analyst: review ID-1003; account remains disabled; scope is not yet confirmed.
+- 2026-11-10T00:42:08.306Z | C10 | simulated_action: release_message | MSG-1001 released in the lab. Separate identity alert remains open.
+- 2026-11-10T00:42:09.388Z | C10 | simulated_action: update_playbook | Lab handover procedure revised.
+- 2026-11-10T00:42:10.521Z | C10 | simulated_action: handover | Simulated handover recorded. No message sent to another person.
+- 2026-11-10T00:42:11.905Z | C10 | learner_verification: Learner clicked verification; browser engine checked current synthetic state.
+- 2026-11-10T00:43:25.451Z | C10 | learner_note_saved: Most recent saved version of the learner note. Earlier edits are not retained.
+- 2026-11-10T00:43:30.574Z | C10 | guided_steps_completed: Guided steps and short note completed.

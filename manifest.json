@@ -1,0 +1,185 @@
+{
+  "purpose": "File integrity checks for the public project bundle.",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4131,
+      "sha256": "4a1255c30115d37612004b2c818c5617ee3ef008b653e48dc0ec227549023c5c"
+    },
+    {
+      "file": "PROJECT_NOTES.md",
+      "bytes": 3042,
+      "sha256": "90905f35cb68f9d610100b89530742dd99642d626a50ac0d5613fdf2978a79a7"
+    },
+    {
+      "file": "RESPONSIBILITY_MAP.md",
+      "bytes": 935,
+      "sha256": "515681980284656f884e1e2dd5d41b957e5497948792348d1fa2a997ce07982f"
+    },
+    {
+      "file": "evidence/timeline.json",
+      "bytes": 32555,
+      "sha256": "4e209960c5d036bf02bdd618699c5c44f112ec872458f6ac078ae702bcdff4c0"
+    },
+    {
+      "file": "evidence/timeline.md",
+      "bytes": 13173,
+      "sha256": "6d69269b6de0d130b0f0ea417e3f7cb49c3ff66d1ad0171382463561d598d953"
+    },
+    {
+      "file": "evidence/scenarios.json",
+      "bytes": 12410,
+      "sha256": "c1c1614dc1ce3cc2a0fb05aca5bc07f9029ceaedc2ed431326808fdfa82e6701"
+    },
+    {
+      "file": "ATTRIBUTION.md",
+      "bytes": 243,
+      "sha256": "7e1830271eb92b7578c7020b826a876323f13708b5472fc4f163c507389979e7"
+    },
+    {
+      "file": "SCREENSHOT_CHECKLIST.md",
+      "bytes": 437,
+      "sha256": "d62284b6e561f13ff426329aba6ce6ce0c3b71a0fc1e463ce726ba6c51e88a56"
+    },
+    {
+      "file": "reports/C02.md",
+      "bytes": 1774,
+      "sha256": "3873df77aa138808af851966b3c0184a5da618b8e6920a47e48c2dacb67fc076"
+    },
+    {
+      "file": "reports/C03.md",
+      "bytes": 1969,
+      "sha256": "fa760f3fc3b70ef14b4f001b1128af467d24a1852d14f760cd67bc93c986f818"
+    },
+    {
+      "file": "reports/C04.md",
+      "bytes": 2186,
+      "sha256": "154ab9aff60edde94c8b1d7719f0f495ac3326e287dd778066a828742ff32f1d"
+    },
+    {
+      "file": "reports/C05.md",
+      "bytes": 3489,
+      "sha256": "cccee6ff3db45d52e6747a45280e797a8f4f57fd15bcaa56fbd3a437bfe7e8e1"
+    },
+    {
+      "file": "reports/C06.md",
+      "bytes": 3241,
+      "sha256": "fe955dd56649e9bb3a59cd1b55f6dbfceebfbe387883daa95a9362d67d3df036"
+    },
+    {
+      "file": "reports/C01.md",
+      "bytes": 1973,
+      "sha256": "35fc3b197c2c15a4cfebf67da71b27fb3fbcd454a1718c7a773e1b302d793d21"
+    },
+    {
+      "file": "reports/C07.md",
+      "bytes": 2055,
+      "sha256": "146b6fa4967dee600a211d0386d0ebe968db1eb7e84b51bf646eb3cca1a00e90"
+    },
+    {
+      "file": "reports/C08.md",
+      "bytes": 1493,
+      "sha256": "c0334a1a1d8045a169df788d895f91a307508798e71895c61f93a82e009833aa"
+    },
+    {
+      "file": "reports/C09.md",
+      "bytes": 2863,
+      "sha256": "fea4435c054b6d0fe7fcb730a8fa8cdfc10aa1ff19bb4d0faf373bb81070f314"
+    },
+    {
+      "file": "reports/C10.md",
+      "bytes": 2300,
+      "sha256": "7d3106c2a65fa2ed904653ba1f4521a6fc02bf822a41a4f80c67966689e89690"
+    },
+    {
+      "file": "lab/index.html",
+      "bytes": 2244,
+      "sha256": "9f4cd3f4349b59124c1c6de012faaa808deba3a4174326c0df726e9ae601dd73"
+    },
+    {
+      "file": "lab/advanced.html",
+      "bytes": 4034,
+      "sha256": "7c214221d03d2fc052e815863f9f530c6a95878e2a92f716771f927119eac061"
+    },
+    {
+      "file": "lab/beginner.js",
+      "bytes": 20712,
+      "sha256": "d4962aa4ae507f1a46cb4db35a610363e5a015a1f2ae0d0eb5839573ee00800f"
+    },
+    {
+      "file": "lab/beginner.css",
+      "bytes": 6900,
+      "sha256": "004ac27b218e65173310b58d66e5858a6bd4b9c0275a641beb2b78d60683c81f"
+    },
+    {
+      "file": "lab/guided-engine.js",
+      "bytes": 5924,
+      "sha256": "9639290579c4992661b4ed03392cd70f21603117440119312349252c3f983f57"
+    },
+    {
+      "file": "lab/lessons.js",
+      "bytes": 17822,
+      "sha256": "a03792281064e61d2a3d60edf63fe437966491949742e9d105f8498020fb74be"
+    },
+    {
+      "file": "lab/portfolio.js",
+      "bytes": 12842,
+      "sha256": "14b4d5ff5601906a121b4aa8c6e78461a8d6ef12f56a88591e05c2fcba305112"
+    },
+    {
+      "file": "lab/data.js",
+      "bytes": 21626,
+      "sha256": "9068dec7829e908c171d05c369d5afbb86670f9df8367a25f82f536885db4239"
+    },
+    {
+      "file": "lab/engine.js",
+      "bytes": 14518,
+      "sha256": "cdf9132ebe1c2702485d04acc0e300115f8d59af9c7d474b9a75ee66b1254ab2"
+    },
+    {
+      "file": "lab/app.js",
+      "bytes": 26641,
+      "sha256": "8c1e7455a762cc008108a177a5327d76fbed4d56ee9a3ce7007081baec2a1ac5"
+    },
+    {
+      "file": "lab/style.css",
+      "bytes": 12532,
+      "sha256": "41cc25b1eb412f912ae83f1784e78634b11ac92eed10176683dc97c44c428d2b"
+    },
+    {
+      "file": "lab/icon.svg",
+      "bytes": 212,
+      "sha256": "2e044446ed9faa4e737618c7c8fe8c996b055009507d96a5fc42022b1a30de91"
+    },
+    {
+      "file": "lab/package.json",
+      "bytes": 115,
+      "sha256": "ed78674cf112f228372c59ccdfe0e3606bfedab59315541b6084e72681f1528b"
+    },
+    {
+      "file": "lab/tests/engine.test.mjs",
+      "bytes": 4977,
+      "sha256": "73e9a544d4613f04358fa59d004273f750b17cf137c37644b2accf40c34fce8f"
+    },
+    {
+      "file": "lab/tests/guided.test.mjs",
+      "bytes": 3024,
+      "sha256": "f6f9f5e34814e22a423e622354a9bc245e917856792c3ef841852949a9a23eb2"
+    },
+    {
+      "file": "lab/tests/portfolio.test.mjs",
+      "bytes": 3100,
+      "sha256": "7d810dd1c334a7e853d645c9e22a9302bfd46f3ce3f5b0edc1481b7e911575ca"
+    },
+    {
+      "file": "screenshots/lab-demo-evidence-table.jpg",
+      "bytes": 108161,
+      "sha256": "611082da8b9a932fab1ed7d9150f2263e6eaf8637cf0db1207fe35fd8d2db497"
+    },
+    {
+      "file": "screenshots/lab-demo-response-result.jpg",
+      "bytes": 128794,
+      "sha256": "b52b9af268d44fd592b8c28f667db67653c43b9f0b13336e9789ddc3f769a138"
+    }
+  ]
+}

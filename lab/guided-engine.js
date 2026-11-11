@@ -1,0 +1,29 @@
+import {lessons} from './lessons.js';
+import {freshState,validateState,performAction,finalState} from './engine.js';
+import {cases} from './data.js';
+export const blankLesson=()=>({stage:0,solved:[],answers:[],actionIndex:0,actionDone:false,actionResult:'',verified:false,note:'',completed:false});
+export function freshGuided(){return {version:1,active:0,lab:freshState(),records:Object.fromEntries(lessons.map(l=>[l.id,blankLesson()]))};}
+export function validateGuided(s){if(!s||s.version!==1||!Number.isInteger(s.active)||s.active<0||s.active>=lessons.length||!s.records)throw Error('Unsupported lesson backup.');const copy=structuredClone(s);if(copy.portfolio!==undefined&&(!copy.portfolio||typeof copy.portfolio.author!=='string'||copy.portfolio.author.length>120||typeof copy.portfolio.notes!=='string'||copy.portfolio.notes.length>50000))throw Error('Invalid project notebook.');copy.lab=validateState(s.lab);for(const l of lessons){const r=copy.records[l.id];if(!r||!Number.isInteger(r.stage)||r.stage<0||r.stage>7||!Array.isArray(r.solved)||!r.solved.every(x=>Number.isInteger(x)&&x>=0&&x<3)||!Array.isArray(r.answers)||!r.answers.every(a=>Number.isInteger(a.question)&&a.question>=0&&a.question<3&&Number.isInteger(a.choice)&&a.choice>=0&&a.choice<l.questions[a.question].options.length&&typeof a.time==='string')||typeof r.note!=='string'||r.note.length>20000||typeof r.actionResult!=='string'||!Number.isInteger(r.actionIndex)||r.actionIndex<0||r.actionIndex>=cases.find(c=>c.id===l.id).actions.length||typeof r.actionDone!=='boolean'||typeof r.verified!=='boolean'||typeof r.completed!=='boolean')throw Error('Invalid guided lesson record.');if(r.editedNote!==undefined&&(typeof r.editedNote!=='string'||r.editedNote.length>20000))throw Error('Invalid expanded note.');for(const key of ['startedAt','completedAt','verifiedAt','noteUpdatedAt'])if(r[key]!==undefined&&(typeof r[key]!=='string'||!Number.isFinite(Date.parse(r[key]))))throw Error('Invalid lesson timestamp.');}return copy;}
+export function answer(s,choice){const l=lessons[s.active],r=s.records[l.id],i=r.stage-1;if(i<0||i>2)throw Error('No question at this step.');const q=l.questions[i];if(!Number.isInteger(choice)||choice<0||choice>=q.options.length)throw Error('Choose one of the answers.');const correct=choice===q.answer;r.answers.push({question:i,choice,correct,time:new Date().toISOString()});if(correct&&!r.solved.includes(i))r.solved.push(i);return correct;}
+export function next(s){const l=lessons[s.active],r=s.records[l.id],c=cases.find(c=>c.id===l.id);if(r.stage===0&&!r.startedAt)r.startedAt=new Date().toISOString();if(r.stage>=1&&r.stage<=3&&!r.solved.includes(r.stage-1))throw Error('Choose the answer first.');if(r.stage===3){s.lab.records[l.id].evidence=[...c.required];s.lab.records[l.id].hints=Math.max(1,s.lab.records[l.id].hints);}
+ if(r.stage===4){if(!r.actionDone)throw Error('Try the highlighted action first.');if(r.actionIndex<c.actions.length-1){r.actionIndex++;r.actionDone=false;r.actionResult='';return;}r.stage=5;return;}
+ if(r.stage===5&&!r.verified)throw Error('Check the result first.');if(r.stage===6){if(!r.note.trim().length)throw Error('Write a few words about what you noticed.');r.completed=true;if(!r.completedAt)r.completedAt=new Date().toISOString();}
+ if(r.stage<7)r.stage++;
+}
+export function runGuidedAction(s){const l=lessons[s.active],r=s.records[l.id],c=cases.find(c=>c.id===l.id);if(r.stage!==4||r.actionDone)throw Error('This action is not ready.');const a=c.actions[r.actionIndex];if(l.id==='C10')s.lab.records[l.id].report.handover='SUPPLIED GUIDED EXAMPLE: Senior analyst owns ID-1003. Review the blocked attempts against the disabled account; confirm scope and record findings. The separate legitimate route receipt is supported by CHG-1001.';
+ const reason=`SUPPLIED GUIDED INSTRUCTION: ${c.title}. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson.`;
+ const result=performAction(s.lab,l.id,a,reason);r.actionDone=true;r.actionResult=result;return result;
+}
+export function editGuidedRule(s) {
+ const lesson = lessons[s.active];
+ const record = s.records[lesson.id];
+ const ruleActions = cases.find(c => c.id === 'C09').actions;
+ if (lesson.id !== 'C09' || record.stage !== 4 || record.actionDone ||
+     ruleActions[record.actionIndex] !== 'deploy_rule') {
+  throw Error('Rule settings can be edited before activating the tested rule.');
+ }
+ record.actionIndex = ruleActions.indexOf('test_rule');
+ record.actionResult = '';
+}
+export function verifyGuided(s){const l=lessons[s.active],r=s.records[l.id];if(r.stage!==5)throw Error('Verification is not ready.');r.verified=finalState(s.lab,l.id);if(r.verified)r.verifiedAt=new Date().toISOString();return r.verified;}
+export function exportGuided(s,id){const l=lessons.find(l=>l.id===id),r=s.records[id];return `# Guided lesson: ${l.title}\n\nStatus: ${r.completed?'Completed guided steps':'In progress'}\nTraining mode: Fully guided; explanations, evidence selection, action rationales and any example handover are supplied by the lesson. Not independent assessment or real system administration.\n\n## Learner-authored note\n${r.note||'(not written)'}\n\n## Expanded project wording (with assistance)\n${r.editedNote||'(No assisted expansion saved.)'}\n\nThis expanded version is separate from the learner’s original answer.\n\n## Answer attempts\n${r.answers.map(a=>`${a.time} | ${l.questions[a.question].ask} | ${l.questions[a.question].options[a.choice]} | ${a.correct?'Correct':'Try again'}`).join('\n')}\n\n## Simulated actions\n${s.lab.records[id].audit.map(a=>`${a.time} | ${a.action} | ${a.result}\n${a.reason}`).join('\n\n')}\n\nCurrent simulated outcome verified by learner: ${r.verified}\n\nAll evidence is fictional. Completion indicates guided practice, not employment or certification.\n`;}

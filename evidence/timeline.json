@@ -1,0 +1,814 @@
+[
+  {
+    "time": "2026-11-05T22:54:24.862Z",
+    "case": "C02",
+    "type": "learner_answer",
+    "detail": "Do these two email addresses match?",
+    "choice": "No, the part after @ is different.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-05T22:54:47.396Z",
+    "case": "C02",
+    "type": "learner_answer",
+    "detail": "Does the sender check support the claimed company?",
+    "choice": "No.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-05T22:55:03.500Z",
+    "case": "C02",
+    "type": "learner_answer",
+    "detail": "What should you do next?",
+    "choice": "Move the message to quarantine and check that it moved.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-05T22:55:11.831Z",
+    "case": "C02",
+    "type": "simulated_action",
+    "detail": "quarantine_message",
+    "result": "MSG-201 moved to lab quarantine.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Dispatch change, unusual sender. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-05T22:55:19.662Z",
+    "case": "C02",
+    "type": "simulated_action",
+    "detail": "verify_quarantine",
+    "result": "MSG-201 quarantine state confirmed.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Dispatch change, unusual sender. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-05T22:59:28.511Z",
+    "case": "C02",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-05T23:15:05.528Z",
+    "case": "C02",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-05T23:15:07.634Z",
+    "case": "C02",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-07T15:39:57.656Z",
+    "case": "C03",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-07T15:40:10.516Z",
+    "case": "C03",
+    "type": "learner_answer",
+    "detail": "Which clue tells you where the information would go?",
+    "choice": "The destination address.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-07T15:40:19.312Z",
+    "case": "C03",
+    "type": "learner_answer",
+    "detail": "Should you enter a real password?",
+    "choice": "No.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-07T15:40:59.698Z",
+    "case": "C03",
+    "type": "learner_answer",
+    "detail": "What is the safest lab response?",
+    "choice": "Block that exact destination and test the block.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-07T15:41:44.131Z",
+    "case": "C03",
+    "type": "simulated_action",
+    "detail": "block_domain",
+    "result": "Exact destination manifest-check.invalid blocked in the lab.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The route manifest attachment. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-07T15:41:49.829Z",
+    "case": "C03",
+    "type": "simulated_action",
+    "detail": "verify_block",
+    "result": "Synthetic destination request denied by the lab blocklist.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The route manifest attachment. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-07T15:41:54.229Z",
+    "case": "C03",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-07T15:43:02.747Z",
+    "case": "C03",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-07T15:43:04.447Z",
+    "case": "C03",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-07T15:43:12.693Z",
+    "case": "C04",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-07T15:43:23.115Z",
+    "case": "C04",
+    "type": "learner_answer",
+    "detail": "Do passed email checks prove the bank change is safe?",
+    "choice": "No, the request still needs verification.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-07T15:43:34.362Z",
+    "case": "C04",
+    "type": "learner_answer",
+    "detail": "Which number should you use?",
+    "choice": "The existing directory number.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-09T17:42:06.503Z",
+    "case": "C04",
+    "type": "learner_answer",
+    "detail": "What should happen before payment?",
+    "choice": "Verify the supplier, hold the payment, and notify a senior analyst.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-09T17:42:18.288Z",
+    "case": "C04",
+    "type": "simulated_action",
+    "detail": "callback_vendor",
+    "result": "Registered supplier extension 0142 denies bank change. Callback simulated.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Vendor bank details changed. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T17:42:21.288Z",
+    "case": "C04",
+    "type": "simulated_action",
+    "detail": "hold_payment",
+    "result": "INV-1042 held in simulated finance queue.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Vendor bank details changed. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T17:42:26.338Z",
+    "case": "C04",
+    "type": "simulated_action",
+    "detail": "escalate",
+    "result": "Senior analyst escalation recorded in simulation. No external notification sent.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Vendor bank details changed. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T17:42:35.406Z",
+    "case": "C04",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-09T17:59:43.453Z",
+    "case": "C04",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-09T17:59:44.990Z",
+    "case": "C04",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-09T17:59:53.220Z",
+    "case": "C05",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-09T18:00:00.973Z",
+    "case": "C05",
+    "type": "learner_answer",
+    "detail": "How should you verify the request?",
+    "choice": "Use the registered supervisor.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-09T18:00:09.402Z",
+    "case": "C05",
+    "type": "learner_answer",
+    "detail": "Which is the stronger clue?",
+    "choice": "The unapproved forwarding rule.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-09T18:00:54.933Z",
+    "case": "C05",
+    "type": "learner_answer",
+    "detail": "Is changing the password the entire recovery?",
+    "choice": "No, old sessions and forwarding also need attention.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-09T18:01:01.133Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "verify_identity",
+    "result": "Registered supervisor confirms employee through simulated ID-04 callback.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:01:14.215Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "disable_account",
+    "result": "Test account disabled; existing sessions remain until revoked.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:01:24.064Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "reset_credential",
+    "result": "Fictional credential version 2; sessions and forwarding unchanged.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:01:38.865Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "revoke_sessions",
+    "result": "All simulated sessions revoked.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:01:44.315Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "remove_forwarding",
+    "result": "RULE-51 removed from lab account.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:01:58.415Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "restore_account",
+    "result": "Test account enabled after cleanup.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:02:02.332Z",
+    "case": "C05",
+    "type": "simulated_action",
+    "detail": "verify_recovery",
+    "result": "Recovery verified in simulation: enabled, updated credential, no old sessions, no forwarding.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Reset request during dispatch. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-09T18:02:04.582Z",
+    "case": "C05",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-09T18:53:31.462Z",
+    "case": "C05",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-09T18:53:34.495Z",
+    "case": "C05",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-09T18:53:47.841Z",
+    "case": "C06",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-10T00:13:00.466Z",
+    "case": "C06",
+    "type": "learner_answer",
+    "detail": "Are there matching details linking these events?",
+    "choice": "Yes: the same computer and attachment ID.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:13:11.014Z",
+    "case": "C06",
+    "type": "learner_answer",
+    "detail": "What should you include in your timeline?",
+    "choice": "The attachment, process, and connection.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:13:21.364Z",
+    "case": "C06",
+    "type": "learner_answer",
+    "detail": "What should you do before cleanup?",
+    "choice": "Preserve the snapshot.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:14:09.381Z",
+    "case": "C06",
+    "type": "simulated_action",
+    "detail": "capture_snapshot",
+    "result": "Synthetic endpoint evidence snapshot preserved.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: A workstation follows the email. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:14:11.246Z",
+    "case": "C06",
+    "type": "simulated_action",
+    "detail": "isolate_endpoint",
+    "result": "WH-PC-03 isolated in simulation; your computer is unaffected.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: A workstation follows the email. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:14:13.546Z",
+    "case": "C06",
+    "type": "simulated_action",
+    "detail": "remove_artifact",
+    "result": "RouteSync-demo artifact removed from simulated state.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: A workstation follows the email. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:14:14.930Z",
+    "case": "C06",
+    "type": "simulated_action",
+    "detail": "restore_endpoint",
+    "result": "WH-PC-03 simulated connectivity restored.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: A workstation follows the email. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:14:16.080Z",
+    "case": "C06",
+    "type": "simulated_action",
+    "detail": "verify_endpoint",
+    "result": "Lab endpoint verified: connected, training artifact absent, snapshot retained.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: A workstation follows the email. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:14:48.596Z",
+    "case": "C06",
+    "type": "simulated_action",
+    "detail": "escalate",
+    "result": "Senior analyst escalation recorded in simulation. No external notification sent.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: A workstation follows the email. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:14:49.830Z",
+    "case": "C06",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-10T00:15:36.046Z",
+    "case": "C06",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-10T00:15:37.412Z",
+    "case": "C06",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-10T00:16:42.094Z",
+    "case": "C01",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-10T00:20:56.490Z",
+    "case": "C01",
+    "type": "learner_answer",
+    "detail": "What does this evidence support?",
+    "choice": "A reporting failure after maintenance.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:23:08.921Z",
+    "case": "C01",
+    "type": "learner_answer",
+    "detail": "Can missing records prove nothing happened?",
+    "choice": "Yes.",
+    "feedback": "retry",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:23:09.804Z",
+    "case": "C01",
+    "type": "learner_answer",
+    "detail": "Can missing records prove nothing happened?",
+    "choice": "No, there is a gap in what we can see.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:23:24.304Z",
+    "case": "C01",
+    "type": "learner_answer",
+    "detail": "What confirms reporting started again?",
+    "choice": "You clicked restart.",
+    "feedback": "retry",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:23:25.120Z",
+    "case": "C01",
+    "type": "learner_answer",
+    "detail": "What confirms reporting started again?",
+    "choice": "A new heartbeat arrives.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:23:57.972Z",
+    "case": "C01",
+    "type": "simulated_action",
+    "detail": "restore_collector",
+    "result": "WH-07 collector running.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The silent scanner. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:24:09.487Z",
+    "case": "C01",
+    "type": "simulated_action",
+    "detail": "verify_heartbeat",
+    "result": "New synthetic WH-07 heartbeat received. Historical visibility gap remains documented.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The silent scanner. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:24:11.771Z",
+    "case": "C01",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-10T00:25:13.477Z",
+    "case": "C01",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-10T00:25:14.899Z",
+    "case": "C01",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-10T00:25:18.245Z",
+    "case": "C07",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-10T00:26:05.247Z",
+    "case": "C07",
+    "type": "learner_answer",
+    "detail": "Does version 1.2 fall in the affected range?",
+    "choice": "Yes.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:27:04.579Z",
+    "case": "C07",
+    "type": "learner_answer",
+    "detail": "What comes before the patch?",
+    "choice": "Approval for the change.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:28:25.945Z",
+    "case": "C07",
+    "type": "learner_answer",
+    "detail": "What should happen after the patch?",
+    "choice": "Retest the finding.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:28:58.564Z",
+    "case": "C07",
+    "type": "simulated_action",
+    "detail": "approve_maintenance",
+    "result": "CHG-72 maintenance approval recorded in simulation.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Scanner reports a vulnerable agent. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:29:02.479Z",
+    "case": "C07",
+    "type": "simulated_action",
+    "detail": "patch_agent",
+    "result": "Simulated RouteAgent inventory updated to 1.3.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Scanner reports a vulnerable agent. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:29:04.146Z",
+    "case": "C07",
+    "type": "simulated_action",
+    "detail": "rescan",
+    "result": "Simulated inventory retest: LAB-ADV-001 resolved at 1.3. No actual host was scanned.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Scanner reports a vulnerable agent. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:29:06.147Z",
+    "case": "C07",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-10T00:29:18.298Z",
+    "case": "C07",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-10T00:29:23.076Z",
+    "case": "C07",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-10T00:29:25.275Z",
+    "case": "C08",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-10T00:30:21.759Z",
+    "case": "C08",
+    "type": "learner_answer",
+    "detail": "What connects A and B?",
+    "choice": "The same destination and marker.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:30:31.375Z",
+    "case": "C08",
+    "type": "learner_answer",
+    "detail": "Should you automatically group C with A and B?",
+    "choice": "No, C has separate legitimate supporting evidence.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:30:54.029Z",
+    "case": "C08",
+    "type": "learner_answer",
+    "detail": "What belongs on this case’s watchlist?",
+    "choice": "Only the supported suspicious destination.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:31:55.035Z",
+    "case": "C08",
+    "type": "simulated_action",
+    "detail": "publish_watchlist",
+    "result": "Exact campaign domain added. Approved supplier excluded. Watchlist expires after this exercise.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: One campaign or three?. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:31:58.418Z",
+    "case": "C08",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-10T00:32:56.472Z",
+    "case": "C08",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-10T00:32:58.165Z",
+    "case": "C08",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-10T00:33:37.096Z",
+    "case": "C09",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-10T00:33:49.830Z",
+    "case": "C09",
+    "type": "learner_answer",
+    "detail": "Why might this rule be noisy?",
+    "choice": "It also catches normal mistakes.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:33:56.612Z",
+    "case": "C09",
+    "type": "learner_answer",
+    "detail": "Would a threshold of 8 catch that example?",
+    "choice": "Yes.",
+    "feedback": "retry",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:33:57.413Z",
+    "case": "C09",
+    "type": "learner_answer",
+    "detail": "Would a threshold of 8 catch that example?",
+    "choice": "No.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:36:04.203Z",
+    "case": "C09",
+    "type": "learner_answer",
+    "detail": "Which exception is more focused?",
+    "choice": "Exclude only the explicitly approved job groups.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:36:07.173Z",
+    "case": "C09",
+    "type": "simulated_action",
+    "detail": "baseline_rule",
+    "result": "Baseline TP=3, FP=3, FN=0.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Too many failed-login alerts. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:36:09.972Z",
+    "case": "C09",
+    "type": "simulated_action",
+    "detail": "test_rule",
+    "result": "Candidate training TP=3, FP=3, FN=0; held-out TP=2, FP=1, FN=0.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Too many failed-login alerts. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:39:39.176Z",
+    "case": "C09",
+    "type": "simulated_action",
+    "detail": "test_rule",
+    "result": "Candidate training TP=3, FP=2, FN=0; held-out TP=2, FP=1, FN=0.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Too many failed-login alerts. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:39:53.053Z",
+    "case": "C09",
+    "type": "simulated_action",
+    "detail": "test_rule",
+    "result": "Candidate training TP=3, FP=1, FN=0; held-out TP=2, FP=0, FN=0.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Too many failed-login alerts. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:39:57.346Z",
+    "case": "C09",
+    "type": "simulated_action",
+    "detail": "deploy_rule",
+    "result": "Tested rule activated in the browser lab only.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: Too many failed-login alerts. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:39:59.768Z",
+    "case": "C09",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-10T00:41:11.862Z",
+    "case": "C09",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-10T00:41:13.262Z",
+    "case": "C09",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  },
+  {
+    "time": "2026-11-10T00:41:16.179Z",
+    "case": "C10",
+    "type": "guided_lesson_started",
+    "detail": "Learner started the guided lesson."
+  },
+  {
+    "time": "2026-11-10T00:42:02.263Z",
+    "case": "C10",
+    "type": "learner_answer",
+    "detail": "Do the records support releasing this receipt?",
+    "choice": "Yes.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:42:04.672Z",
+    "case": "C10",
+    "type": "learner_answer",
+    "detail": "Does releasing the receipt close this account alert too?",
+    "choice": "Yes.",
+    "feedback": "retry",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:42:05.438Z",
+    "case": "C10",
+    "type": "learner_answer",
+    "detail": "Does releasing the receipt close this account alert too?",
+    "choice": "No, it still needs its own review.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:42:06.738Z",
+    "case": "C10",
+    "type": "learner_answer",
+    "detail": "Which note helps the next person?",
+    "choice": "Senior analyst: review ID-1003; account remains disabled; scope is not yet confirmed.",
+    "feedback": "correct",
+    "support": "Guided explanation and feedback available"
+  },
+  {
+    "time": "2026-11-10T00:42:08.306Z",
+    "case": "C10",
+    "type": "simulated_action",
+    "detail": "release_message",
+    "result": "MSG-1001 released in the lab. Separate identity alert remains open.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The alert that can wait. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:42:09.388Z",
+    "case": "C10",
+    "type": "simulated_action",
+    "detail": "update_playbook",
+    "result": "Lab handover procedure revised.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The alert that can wait. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:42:10.521Z",
+    "case": "C10",
+    "type": "simulated_action",
+    "detail": "handover",
+    "result": "Simulated handover recorded. No message sent to another person.",
+    "support": "SUPPLIED GUIDED INSTRUCTION: The alert that can wait. Follow the explained training step, using the automatically attached fictional case evidence. The learner clicked this simulated control; this rationale was supplied by the lesson."
+  },
+  {
+    "time": "2026-11-10T00:42:11.905Z",
+    "case": "C10",
+    "type": "learner_verification",
+    "detail": "Learner clicked verification; browser engine checked current synthetic state."
+  },
+  {
+    "time": "2026-11-10T00:43:25.451Z",
+    "case": "C10",
+    "type": "learner_note_saved",
+    "detail": "Most recent saved version of the learner note. Earlier edits are not retained."
+  },
+  {
+    "time": "2026-11-10T00:43:30.574Z",
+    "case": "C10",
+    "type": "guided_steps_completed",
+    "detail": "Guided steps and short note completed."
+  }
+]
